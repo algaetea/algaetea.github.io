@@ -1,0 +1,274 @@
+body {
+    background-color: #082B59;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+  }
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  img {
+    max-width: 100%;
+  }
+  a {
+    color: #59331d;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  header {
+    border-bottom: 10px solid #d98555;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  nav li {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.3rem;
+  }
+  nav .logo img {
+    max-width: 150px;
+  }
+  nav .logo {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  nav a:hover {
+    color: #d98555;
+  }
+  .main-bkgd {
+    background: #ffffff url("../media/gulp-bottom-beans.jpg") repeat-x bottom;
+    padding-bottom: 300px;
+    border-top: #ffffff solid 1px;
+    text-align: center;
+  }
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  article {
+    flex-basis: 60%;
+  }
+  picture {
+    margin: 3rem 0 0 0;
+    flex-basis: 38%;
+    background-color: transparent;
+  }
+  picture img {
+    border-radius: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 3rem 0 0 0;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 3px solid #59331d;
+  }
+  .button:hover {
+    background-color: #f2f2f2;
+    color: #59331d;
+  }
+  footer {
+    color: #f2f2f2;
+    text-align: center;
+    border-top: 10px solid #d98555;
+  }
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  footer a {
+    color: #f2f2f2;
+    font-size: 2rem;
+    display: block;
+    margin: 0 1rem 3rem 1rem;
+  }
+
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .card {
+    flex-basis: 30%;
+    color: #000000;
+    border-radius: 10px;
+    max-width: 480px;
+    margin-top: 3rem;
+    min-width: 300px;
+  }
+
+  .card h2 {
+    text-align: center;
+  }
+
+  .card p {
+    padding: 0 1rem 0 1rem;
+  }
+
+  .card img {
+    border-radius: 10px;
+  }
+
+    .tablet {
+        display: none;
+      }
+    .phone {
+        display: none;
+    }
+    .comp {
+        display: inline-block;
+    }
+
+    @media (max-width:991px) {
+        .comp {
+            display: none;
+          }
+        .phone {
+            display: none;
+        }
+        .tablet {
+            display: block;
+            text-align: center;
+        }
+        .container {
+            flex-flow: column wrap;
+            align-items: center;
+        }
+        .card {
+            max-width: 720px;
+            display: flex;
+            flex-flow: row;
+            background-color: #ffffff;
+            color: #000000; 
+            justify-content: center; 
+            min-width: none;
+            margin: 3rem 3rem 0 3rem;
+        }
+        .card h2 {
+            font-size: 1rem;
+        }
+        .left {
+            flex-basis: 50%;
+        }   
+        .right {
+            flex-basis: 50%;
+        }
+        footer p {
+            padding: 0;
+            margin: 0;
+          }
+          footer a {
+            padding: 0;
+            margin: 0 1rem 0 0;
+          }
+    }
+
+  @media (max-width:768px) {
+    .logo {
+      max-height: 100px;
+    }
+    nav ul {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+    }
+    nav li{
+      font-style: none;
+      font-size: medium;
+      text-align: center;
+      padding: 0.3rem;
+      margin: 0;
+    }
+    .comp {
+        display: none;
+      }
+    .tablet {
+        display: none;
+    }
+.phone {
+    display: inline-block;
+}
+
+    .main {
+      display: flex;
+      flex-flow: column unwrap;
+    }
+    article {
+      flex-basis: 100%;
+      text-align: center;
+    }
+    article p {
+        text-align: start;
+    }
+    .button {
+        margin: 0;
+    }
+    picture {
+      margin-top: 2rem;
+      text-align: center;
+      display:inline-block;
+      flex-basis: 100%;
+    }
+    footer p {
+      padding: 0;
+      margin: 0;
+    }
+    footer a {
+      padding: 0;
+      margin: 0 1rem 0 0;
+    }
+
+    .card {
+        flex-flow: column;
+        background-color: #ffffff;
+        color: #000000; 
+        justify-content: center; 
+        min-width: none;
+        margin: 3rem 3rem 0 3rem;
+    }
+    .container {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .card img {
+        border-radius: 10px;
+        min-width: none;
+      }
+   
+  }
+
+  
+
